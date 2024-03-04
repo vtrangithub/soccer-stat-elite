@@ -4,3 +4,35 @@
   padding: 2rem;
   text-align: center;
 }
+
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #21cb93;
+}
+
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #d1d7df;
+}
+
+a:hover {
+  text-decoration: underline;
+}
