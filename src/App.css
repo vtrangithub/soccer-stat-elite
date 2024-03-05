@@ -1,21 +1,27 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 /* src/App.css */
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  background-color: #21cb93;
+  background-color: #f4f4f4;
 }
 
 .App {
   text-align: center;
-  margin-top: 20px;
+}
+
+/* Navbar Styles */
+nav {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 1rem;
 }
 
 nav ul {
@@ -28,11 +34,62 @@ nav ul li {
   margin: 0 10px;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: #d1d7df;
+  font-weight: 500;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
+  color: #f4f4f4;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #555;
+}
+
+/* Buttons */
+button,
+.button {
+  background: #0d6efd;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.button:hover {
+  background: #0b5ed7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: left;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
