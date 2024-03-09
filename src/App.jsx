@@ -48,11 +48,7 @@ const App = () => {
             <Button color="inherit" component={RouterLink} to="/">
               Team Statistics
             </Button>
-            <Button
-              color="inherit"
-              component={RouterLink}
-              to="/team-standings"
-            >
+            <Button color="inherit" component={RouterLink} to="/team-standings">
               Major League Standings
             </Button>
           </Toolbar>
