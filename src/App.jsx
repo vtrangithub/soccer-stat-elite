@@ -19,7 +19,7 @@ import {
   Container,
   CssBaseline,
 } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
@@ -30,6 +30,15 @@ const theme = createTheme({
       default: "#f4f4f4",
     },
   },
+});
+
+const StyledContainer = styled(Container)({
+  paddingTop: 0,
+  paddingBottom: 0,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  minHeight: 'calc(100vh - 64px)', // Adjust height based on AppBar's height (e.g., 64px)
 });
 
 const App = () => {
@@ -48,12 +57,16 @@ const App = () => {
             <Button color="inherit" component={RouterLink} to="/">
               Team Statistics
             </Button>
-            <Button color="inherit" component={RouterLink} to="/team-standings">
+            <Button
+              color="inherit"
+              component={RouterLink}
+              to="/team-standings"
+            >
               Major League Standings
             </Button>
           </Toolbar>
         </AppBar>
-        <Container>
+        <StyledContainer>
           <Routes>
             <Route
               path="/"
@@ -78,7 +91,7 @@ const App = () => {
             />
             <Route path="/team-standings" element={<TeamStandings />} />
           </Routes>
-        </Container>
+        </StyledContainer>
       </Router>
     </ThemeProvider>
   );
