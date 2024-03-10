@@ -1,10 +1,9 @@
-// src/components/TeamStatistics.jsx
+// src/components/TeamStandings.jsx
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { BASE_URL, headers } from "../apiConfig";
 import {
   Typography,
-  Button,
   Table,
   TableBody,
   TableCell,
@@ -17,7 +16,6 @@ import {
 
 const TeamStatistics = () => {
   const { leagueId, teamId, season } = useParams();
-  const navigate = useNavigate();
   const [teamStats, setTeamStats] = useState(null);
 
   useEffect(() => {
@@ -45,18 +43,11 @@ const TeamStatistics = () => {
     return <Typography>Loading...</Typography>;
   }
 
-  const handleBack = () => {
-    navigate(-1);
-  };
-
   const totalPoints =
     teamStats.fixtures.wins.total * 3 + teamStats.fixtures.draws.total;
 
   return (
     <Box sx={{ mt: 4 }}>
-      <Button variant="contained" onClick={handleBack} sx={{ mb: 2 }}>
-        Back
-      </Button>
       <Typography variant="h4" gutterBottom component="div">
         {teamStats.team.name} Statistics
       </Typography>
