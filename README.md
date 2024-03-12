@@ -1,4 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14138077&assignment_repo_type=AssignmentRepo)
+
 # 320-Final-Project
 
 Project requirements:
@@ -83,12 +84,7 @@ This project incorporates unit testing to ensure that components behave as expec
 1. **Open a Terminal:** Navigate to the project's root directory in your terminal or command prompt.
 
 2. **Install Dependencies:** If you haven't already, install the project dependencies with the command:
-
-   ```bash
    npm install
 
-   ```
-
 3. **Run test:**
-   ```bash
-     npm run test
+   npm run test

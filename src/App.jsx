@@ -35,10 +35,10 @@ const theme = createTheme({
 const StyledContainer = styled(Container)({
   paddingTop: 0,
   paddingBottom: 0,
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  minHeight: 'calc(100vh - 64px)', // Adjust height based on AppBar's height (e.g., 64px)
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  minHeight: "calc(100vh - 64px)",
 });
 
 const App = () => {
@@ -57,11 +57,7 @@ const App = () => {
             <Button color="inherit" component={RouterLink} to="/">
               Team Statistics
             </Button>
-            <Button
-              color="inherit"
-              component={RouterLink}
-              to="/team-standings"
-            >
+            <Button color="inherit" component={RouterLink} to="/team-standings">
               Major League Standings
             </Button>
           </Toolbar>
