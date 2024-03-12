@@ -46,7 +46,7 @@ Currently, two official plugins are available:
 
 ## Public URL
 
-Visit the deployed SoccerStat Elite application at (https://deployment-url).
+Visit the deployed SoccerStat Elite application at (https://jubilant-dollop-5mqwyly.pages.github.io/).
 
 ## Project Summary
 
