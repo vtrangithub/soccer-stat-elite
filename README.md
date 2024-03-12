@@ -51,7 +51,7 @@ Visit the deployed SoccerStat Elite application at (https://jubilant-dollop-5mqw
 
 ## Project Summary
 
-SoccerStat Elite is a React-based web application that provides users with up-to-date soccer statistics, including team statistics, league standings, and more. It utilizes the API Sports football data to fetch and display the statistics. The app is designed with React Router for navigation, Material UI for styling, and includes unit testing to ensure reliability.
+SoccerStat Elite is a React-based web application that provides users with up-to-date soccer statistics, including team statistics and major league standings. It utilizes the API Sports football data to fetch and display the statistics. The app is designed with React Router for navigation, Material UI for styling, and includes unit testing to ensure reliability.
 
 ## Evaluation
 
